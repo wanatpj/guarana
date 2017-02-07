@@ -1,0 +1,6 @@
+First published in Riemann\'s groundbreaking 1859 paper (Riemann 1859), the Riemann hypothesis is a deep mathematical conjecture which states that the
+nontrivial Riemann zeta function zeros, i.e., the values of  other than , , , ... such that  (where  is the Riemann zeta function) all lie on the
+\"critical line\"  (where  denotes the real part of ).
+
+A more general statement known as the generalized Riemann hypothesis conjectures that neither the Riemann zeta function nor any Dirichlet L-series has
+a zero with real part larger than 1/2.

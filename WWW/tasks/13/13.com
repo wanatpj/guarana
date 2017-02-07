@@ -1,0 +1,2 @@
+ASD (s. 172)<br>
+<a target=blank href=http://wazniak.mimuw.edu.pl/index.php?title=Algorytmy_i_struktury_danych/Algorytmy_tekstowe_II#S.C5.82ownik_pods.C5.82.C3.B3w_bazowych_i_konstrukcja_tablicy_sufiksowej_w_czasie_O.28n_log_n.29>Ważniak</a>

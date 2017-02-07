@@ -1,0 +1,21 @@
+Masz dany multigraf <i>G=(V,E)</i>. Znajdź w nim <u>cykl Eulera</u> (tj. cykl przechodzący przez każdą krawędź dokładnie raz), bądź stwierdź, że nie istnieje.
+
+<b>Wejście:</b>
+W pierwszej linii wejścia znajdują się 2 liczby całkowite |V| i |E| - odpowiednio: ilość wierzchołków grafu G i ilość jego krawędzi. Kolejne E linii wejścia zawiera po dwie liczby całkowite a, b z przedziału <1,|V|> oddzielone spacją. Każda taka para liczb (a,b) opisuje jedną krawędź G.
+<b>Wyjście:</b>
+W jedynej linii wyjścia należy wypisać: -1, jeżeli nie istnieje Cykl Eulera w G, a w przeciwnym wypadku: ciąg liczb oznaczający <u>kolejne wierzchołki</u> przy przechodzeniu G Cyklem Eulera. Jeżeli istnieje więcej niż jedno rozwiązanie należy wypisać to, które w <u>porządku leksykograficznym</u> jest <u>najmniejsze</u>.
+
+<u>Przykład</u>
+<b>Wejście:</b>
+6 7
+1 2
+2 3
+3 4
+4 1
+3 5
+6 5
+3 6
+<b>Wyjście:</b>
+1 2 3 5 6 3 4 1
+
+<u>Uwaga</u>: Należy posługiwać się standardowym wejściem i standardowym wyjściem.

@@ -1,0 +1,48 @@
+<b>Zaczynamy !!!</b><br><br />Rusza testerka Guarana, tworzona głównie na własne potrzeby. Postanowiliśmy udostępnić ją osobom z V LO, więc jeśli zrobiłeś/aś już wszystkie zadania z Themidy to chętnie przetestujemy twoje rozwiązania :)
+1217457875
+Yacek
+<b>SKI</b><br /><br>Zamieszczane będą zadania ze SKI, jeśli ktoś się nie zgadza z wynikiem to pisać (możliwe błędy w testach), testy będą dostępne w /home/guarana/WWW/tasks/id_zadania/in/
+1224862062
+Yacek
+<b>Minmat</b><br />Ostatnie 3 testy sa po 10 000 i 100 000 zestawów.
+1224864949
+Yacek
+Błąd wykonania (RTE) może w szczególnych przypadkach powodować odpowiedź SYS.
+1224964780
+Yacek
+<b>Wyrażenia</b><br />Testy w wyrażeniach pochodzą z: http://users.v-lo.krakow.pl/~earl/ski_testy/
+1224965309
+Yacek
+By móc przeglądać testy, należy kolejno:<br />1) Zalogować się na users.<br />2) Przejść do katalogu 'home/guarana/WWW/tasks/{id_zadania}/{in|out}<br />3) Skatować jakiś test, tzn. użyć polecenia cat, np. 'cat 8.in'
+1224971594
+Wanat
+<b>II tura SKI</b><br />Planowane jest jeszcze dodanie dziś zadania Eliminacje.
+1225055454
+Yacek
+<b>GPS</b><br />Kait zapodał testy do GPS-a.<br />Można już je przeglądać.
+1225129535
+Yacek
+<b>Trójkąty</b><br />Testy do trójkątów są ze strony Sapala.
+1225137571
+Wanat
+Składanie Funkcji<br />... czeka aż któryś z adminów je przyjmie. Testy są ze strony Earla i moje.
+1225155038
+kait
+Wycinanie<br />... też czeka aż jakiś admin je przyjmie. Zostańcie z nami!
+1225218043
+kait
+GG<br />Koniec SKI nastąpił :D. Można się nareszcie nacieszyć czasem na robienie OMa. To jednak nie koniec wyzwań i nie koniec konkursów, zalecane jest więc częste powracanie na łono Guarany, której horda wynajętych peonów dniem i nocą pracuje nad nowymi zadaniami.<br />gl hf                                          -administatorstwo Guarany
+1225240811
+kait
+W zamierzeniu jest dodawanie zadań z III IMPP.<br />Wszystkim startującym życzymy powodzenia.
+1228755039
+wanat
+<b>Testy</b><br />Jeśli chcecie zapodać testy na Guaranę, to udostępnijcie je w swoich katalogach na users i wyślijcie linka na: guarana@v-lo.krakow.pl.<br /><br />By móc przeglądać testy na Guaranie, należy kolejno:<br />1) Zalogować się na users.<br />2) Przejść do katalogu 'home/guarana/WWW/tasks/{id_zadania}/{in|out}<br />3) Skatować jakiś test, tzn. użyć polecenia cat, np. 'cat 8.in'<br /><br /><b>Kontakt</b><br />mail: guarana@v-lo.krakow.pl<br />gg: <br />5158916 - Yacek<br />2989695 - Kait<br />6885258 - Wanat
+1228949986
+Yacek
+Testy 2<br />Pragnę jeno poinformować, że testy w niektórych zadaniach mogą zawierać nieprzepisowo dużą liczbę zestawów danych, co wynika z tego, że łatwiej jest manewrować jednym plikiem niż dużą ich ilością. Poza tym testy są w pełni zgodne z warunkami zadań. Amen.
+1229034019
+kait
+<b>Skarby</b><br />Jeśli ktoś ma na zbyciu testy do Skarbów, to my chętnie przyjmiemy :)
+1229215134
+Yacek

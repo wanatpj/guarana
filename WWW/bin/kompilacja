@@ -1,0 +1,1 @@
+g++ demon.cpp -o demon -lmysqlclient

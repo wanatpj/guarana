@@ -1,0 +1,10 @@
+<b>Opis działania funkcji: Przenoszenie i zmiana nazwy</b>
+<br><br>Funkcja służąca do przenoszenia i zmiany nazwy pliku sugeruje tylko tą drugą funkcję, jednak bardzo dobrze spisuje się w obu zastosowaniach. Funkcja rename() pobiera 2 argumenty: nazwę pliku źródłowego oraz nazwę pliku docelowego jeśli funkcja ma zmienić nazwę, nazwę katalogu jeśli plik ma być przeniesiony, lub ścieżkę wraz z nową nazwą, jeśli plik ma być przeniesiony ze zmianą nazwy. Może mały przykład:
+<br><br>
+<pre>
+rename("aaa", "bbb");      // zmiana nazwy pliku "aaa" na "bbb"
+rename("bbb", "test/");    // przeniesienie pliku "bbb" do katalogu "test"
+rename("aaa", "..");       // przeniesienie pliku "aaa" do katalogu nadrzędnego
+rename("aaa", "test/bbb"); // przeniesienie pliku "aaa" do katalogu "test"
+                           // ze zmianą nazwy na "bbb"
+</pre>

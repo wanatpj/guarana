@@ -1,0 +1,170 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Czas wygenerowania: 26 Maj 2009, 21:00
+-- Wersja serwera: 5.0.60
+-- Wersja PHP: 5.2.6-pl6-gentoo
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Baza danych: `guarana`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Struktura tabeli dla  `categories`
+-- 
+
+CREATE TABLE `categories` (
+  `ID` int(11) NOT NULL auto_increment,
+  `name` varchar(100) NOT NULL,
+  `summary` varchar(10) NOT NULL,
+  PRIMARY KEY  (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin2 AUTO_INCREMENT=13 ;
+
+-- 
+-- Zrzut danych tabeli `categories`
+-- 
+
+INSERT INTO `categories` (`ID`, `name`, `summary`) VALUES 
+(1, 'Algorytmy Aproksymacyjne', 'AA'),
+(2, 'Algorytmy', 'ALG'),
+(3, 'Geometria', 'GEO'),
+(4, 'Algorytmy Grafowe', 'GR'),
+(5, 'Matematyka Dyskretna', 'MD'),
+(6, 'Matematyka Konkretna', 'MK'),
+(7, 'Prawdopodobieństwo & Kombinatoryka', 'P&K'),
+(8, 'Struktury Danych', 'SD'),
+(9, 'Teoria Liczb', 'TL'),
+(10, 'Z Bajką', 'BAJ'),
+(11, 'Nieistotne/Inne ', 'N/I'),
+(12, 'Gry', 'G');
+
+-- --------------------------------------------------------
+
+-- 
+-- Struktura tabeli dla  `solutions`
+-- 
+
+CREATE TABLE `solutions` (
+  `ID` int(11) NOT NULL auto_increment,
+  `user ID` int(11) NOT NULL,
+  `task ID` int(11) NOT NULL,
+  `date` int(11) NOT NULL,
+  PRIMARY KEY  (`ID`),
+  KEY `task` (`task ID`),
+  KEY `user` (`user ID`,`task ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin2 AUTO_INCREMENT=1 ;
+
+-- 
+-- Zrzut danych tabeli `solutions`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Struktura tabeli dla  `tasks`
+-- 
+
+CREATE TABLE `tasks` (
+  `ID` int(11) NOT NULL auto_increment,
+  `name` varchar(100) NOT NULL,
+  `date` int(11) NOT NULL,
+  `from` text,
+  `author` int(11) default NULL,
+  `category` text NOT NULL,
+  `memory` int(11) default NULL,
+  `time` int(11) default NULL,
+  `active` smallint(6) NOT NULL default '0' COMMENT '0-nieaktywne, 1-aktywne dla adminów, 2- aktywne dla wszystkich',
+  PRIMARY KEY  (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin2 AUTO_INCREMENT=20 ;
+
+-- 
+-- Zrzut danych tabeli `tasks`
+-- 
+
+INSERT INTO `tasks` (`ID`, `name`, `date`, `from`, `author`, `category`, `memory`, `time`, `active`) VALUES 
+(14, 'aaaa', 1230337863, '', 1, '000000000000', 0, 0, 0),
+(15, 'bbbbbbbb', 1230338023, '', 1, '000000000000', 0, 0, 0),
+(16, 'fdssdf', 1230338267, 'dfsfsssss', 1, '001010000001', 1073741824, 10000, 0),
+(17, 'rrrrrrr', 1230339197, '', 0, '000000000000', 0, 0, 0),
+(18, 'ążćółę', 1230339750, '', 1, '001000000001', 0, 0, 0),
+(19, 'sfd', 1239402703, 'ewr', 1, '010000000100', 3242, 4234, 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Struktura tabeli dla  `users`
+-- 
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL auto_increment,
+  `login` varchar(50) NOT NULL,
+  `pass` varchar(50) NOT NULL,
+  `privileges` int(11) NOT NULL default '0',
+  `active` tinyint(1) NOT NULL default '0',
+  `email` varchar(50) default NULL,
+  `gg` varchar(30) default NULL,
+  `last` int(11) default NULL,
+  PRIMARY KEY  (`login`),
+  KEY `id` (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin2 AUTO_INCREMENT=66 ;
+
+-- 
+-- Zrzut danych tabeli `users`
+-- 
+
+INSERT INTO `users` (`id`, `login`, `pass`, `privileges`, `active`, `email`, `gg`, `last`) VALUES 
+(27, 'guest', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229989171),
+(3, 'Wanat', '***passworrd-md5***', 2, 1, '', '***gg***', 1240734454),
+(4, 'kait', '***passworrd-md5***', 2, 1, '***mail***', '***gg***', 1243360822),
+(1, 'Yacek', '***passworrd-md5***', 2, 1, '***mail***', '***gg***', 1243340658),
+(6, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229276149),
+(16, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1234107949),
+(9, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229325826),
+(11, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, NULL),
+(26, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, NULL),
+(29, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229302979),
+(14, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1226314775),
+(17, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1234184278),
+(18, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1240407689),
+(44, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229194170),
+(20, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229269007),
+(21, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229184215),
+(32, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229014701),
+(34, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229194243),
+(33, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229352983),
+(31, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229294906),
+(35, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1240322574),
+(36, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229072300),
+(37, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1233683327),
+(38, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229024776),
+(39, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1228940575),
+(40, '***user***', '***passworrd-md5***', 0, 1, '***mail***', '***gg***', 1229729003),
+(41, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229179603),
+(42, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1237931013),
+(43, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229082250),
+(45, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229205910),
+(46, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229104790),
+(47, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229297196),
+(48, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1235837648),
+(49, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229080136),
+(50, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1240499839),
+(51, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229136440),
+(52, '***user***', '***passworrd-md5***', 0, 1, '***mail***', '***gg***', 1240328000),
+(53, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229175774),
+(54, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1230232115),
+(55, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229291614),
+(56, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229273131),
+(57, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229324936),
+(58, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229209698),
+(59, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229289234),
+(60, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229210226),
+(61, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229293229),
+(62, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229307331),
+(64, '***user***', '***passworrd-md5***', 0, 1, '***mail***', NULL, 1229603441);

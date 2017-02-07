@@ -1,0 +1,2 @@
+<a href=http://alg.csie.ncnu.edu.tw/or/SJPan2006.pdf target=blank>http://alg.csie.ncnu.edu.tw/or/SJPan2006.pdf</a> - od 12 strony<br />
+<a href=http://forum.tcs.uj.edu.pl/viewtopic.php?t=1112 target=blank>http://forum.tcs.uj.edu.pl/viewtopic.php?t=1112</a>
